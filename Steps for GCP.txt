@@ -1,0 +1,123 @@
+Project name, project ID: deplatforms, deplatforms, 705340389378
+Compute Engine: deplatforms  (10.142.0.2) (104.196.137.105)
+Cloud SQL (MySQL): deplatformssql (root password: root)
+                   connection name: deplatforms:us-east1:deplatformssql
+                   public ip: 104.196.214.52
+Bucket Name: deplatforms
+
+------------------------------------------------------------------------
+1. Load all files (script.py, currency_list.csv) into a github repository (deptestrepo)
+2. Create GCP Compute engine instance (jot down name, public ip)
+3. SSH into the compute engine (from the compute engine page)
+4. install git
+      sudo apt-get update
+      sudo apt-get -y -qq install git
+      git --version
+5. clone your github repository
+      sudo git clone https://github.com/ami-parikh/data-engineering-platforms-project
+
+6. sudo apt-get update
+   sudo apt-get install python3.4
+   sudo apt-get update
+   sudo apt-get upgrade
+   (now python 3.5.3 should be installed)
+
+7. install pip3 (python is already pre-installed in the Compute engine)
+   sudo apt-get install python3-pip
+
+8. sudo pip3 install libraries -> pandas, numpy, schedule
+
+9. run depscript.py  (sudo python3 depscript.py)
+   this will create the file Currency_Rate.csv
+
+
+10. Create Cloud SQL instance
+    Configuration options -> Authorize networks --> Add networks (in add network -> add the compute engine ip address)
+    Not needed -->  Compute engine -> run the shell command -- ip address
+    
+11. Install mysql client on the Compute engine
+    sudo apt-get update
+    sudo apt-get install mysql-client
+
+
+12. Enable Google Cloud Administration API for the project:
+    https://console.developers.google.com/apis/api/sqladmin.googleapis.com/overview?project=705340389378
+    Click on the Enable button
+
+13. Setup Cloud-SQL-Proxy:
+    sudo wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64
+    sudo mv cloud_sql_proxy.linux.amd64 cloud_sql_proxy
+    sudo chmod +x cloud_sql_proxy
+    sudo ./cloud_sql_proxy -instances=PROJ_NAME:TIMEZONE:SQL_NAME=tcp:3306
+
+
+14. Open one more terminal client (SSH window) and Connect to mysql server (Cloud SQL instance)
+
+15. Not necessary but just to check if you can connect through the proxy.
+    mysql -u root -p --host 127.0.0.1
+    (enter the password when it prompts)
+    This gives the mysql prompt
+
+16. sudo pip3 install pymysql
+    (in the python 3 code
+        import pymysql)
+
+17. Create Cloud SQL instance and create a storage bucket and store the DDL and DML scripts there
+
+18. Run DDL script for creating relational model on Cloud SQL
+
+19. Upload static tables - using Scripts for filling relational model (has to be done table by table)
+
+20. Run DDL script for creating dimensional database
+
+21. Run the DML script for populating it
+		
+22. Run your python script in the compute engine instance(which will pull the currency rates and update it in both tables)
+
+
+
+-----------------------------------------------------------------------------
+steps for loading scripts and csv files in the storage bucket
+
+For other static files (csv) to be uploaded to Cloud SQL (mysql)
+    a. Upload the csv files and the DDL scritps to the Git repository
+    b. Clone/Pull the git repository to the GCP Compute engine through its SSH shell
+    c. Using GCP console, create Storage->Bucket
+    d. at the SSH prompt:   https://github.com/ami-parikh/Data-Engineering-Project
+    e. at the SSH prompt:   gsutil cp yourdirectory/*.sql gs://<BUCKET-NAME>/sql/
+    f. On the Cloud SQL console, select "import" (for running sql script)
+    g. On the Cloud SQL console, select "import" (for loading csv in the database tables)
+    h. Important: The DDL scripts and the CSV structure should match exactly. And the CSV should be without headers. Otherwise steps f & g will have errors
+
+--------------------------------------------------------------------
+Connecting Tableau to CloudSQL
+
+On the Google Cloud Instance
+1. Open an SSH instance of the Compute Engine and start the proxy server
+   sudo ./cloud_sql_proxy -instances=PROJ_NAME:TIMEZONE:SQL_NAME=tcp:3306
+2. Get your computer's public IP (whatismyip.com)
+3. Go to your Cloud SQL instance -> Instance Details -> Authorization -> New Network -> Give a name and your computer's Public IP ->Save
+
+In Tableau
+
+1. Connect -> To a Server -> Google Cloud SQL -> Fill in details for Server (Public IP of Server), Port (3306 - should come automatically) 
+   User Name and Password of your Cloud sql instance (eg root and root)
+   
+------------------------------------------------------------------------
+Mongo DB on your local machine
+
+1. Install and start MongoDB on your local machine.
+2. Make sure to run mongod with the data folder option in Windows Command Prompt
+"C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe" --dbpath "C:\data"
+
+If you get the error 
+JSON decoder out of sync - data changing underfoot?
+add the flag --jsonArray
+
+3. Download file ( right click and save as .json file ) 
+4. Import downloaded sample data into Mongo DB using Windows Command Prompt
+mongoimport --db <db name> --collection <collection name> --drop --file "<pathname>\<filename.json>"
+
+-----------------------------------------------------------------------
+
+
