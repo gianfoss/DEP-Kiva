@@ -1,0 +1,1804 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="114" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>500</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>kiva_loans.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="funded_amount" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="loan_amount" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="activity" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="sector" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="use" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="country_code" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="country" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="region" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="currency" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="partner_id" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="posted_time" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="disbursed_time" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="funded_time" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="term_in_months" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="lender_count" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="tags" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="borrower_genders" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="repayment_interval" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+            <Field name="date" size="500" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\kiva_loans.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>loan_themes_by_region.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Partner ID" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="Field Partner Name" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="sector" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="Loan Theme ID" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="Loan Theme Type" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="country" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="forkiva" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="region" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="geocode_old" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="ISO" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="number" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="amount" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="LocationName" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="geocode" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="names" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="geo" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="lat" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="lon" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="mpi_region" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="mpi_geo" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="rural_pct" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings>
+        <Position x="246" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="726" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_297331df88bf410cada1c544802e64a6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings>
+        <Position x="282" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Partner ID","Field Partner Name","sector","Loan Theme ID","Loan Theme Type","country","forkiva","region","geocode_old","ISO","number","amount","LocationName","geocode","names","geo","lat","lon","mpi_region","mpi_geo","rural_pct"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">False</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="462" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_e357081d064e4a9387df4f8822121bd5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="id" selected="True" />
+            <SelectField field="borrower_genders" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="342" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>borrower_genders</Field>
+          <NumFields value="1" />
+          <Delimeters value="," />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings>
+        <Position x="474" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"id","borrower_genders"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="loan_id" selected="True" />
+            <SelectField field="id" selected="False" />
+            <SelectField field="funded_amount" selected="True" />
+            <SelectField field="loan_amount" selected="True" />
+            <SelectField field="activity" selected="True" />
+            <SelectField field="sector" selected="True" />
+            <SelectField field="use" selected="True" />
+            <SelectField field="country_code" selected="False" />
+            <SelectField field="country" selected="True" />
+            <SelectField field="region" selected="True" />
+            <SelectField field="currency" selected="True" />
+            <SelectField field="partner_id" selected="True" />
+            <SelectField field="posted_time" selected="False" />
+            <SelectField field="disbursed_time" selected="False" />
+            <SelectField field="funded_time" selected="False" />
+            <SelectField field="term_in_months" selected="True" />
+            <SelectField field="lender_count" selected="True" />
+            <SelectField field="tags" selected="True" />
+            <SelectField field="borrower_genders" selected="False" />
+            <SelectField field="repayment_interval" selected="True" />
+            <SelectField field="date" selected="False" />
+            <SelectField field="posted_date" selected="True" />
+            <SelectField field="disbursed_date" selected="True" />
+            <SelectField field="funded_date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1026" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_f60b67db2f32470eabadd3cebfad75ee_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF(Contains('fe', [borrower_genders]), 'female', 'male')" field="borrower_genders" size="500" type="V_String" />
+            <FormulaField expression="iif([borrower_genders] = 'male', 1, 2)" field="gender_id" size="1073741823" type="V_WString" />
+            <FormulaField expression="[id]" field="loan_id" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>borrower_genders = IIF(Contains('fe', [borrower_genders]), 'female', 'male')
+gen...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="630" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="partner_id" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: partner_id</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">Partner_Clean.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Partner_Clean.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1026" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">Gender_Loan_Relationship.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Gender_Loan_Relationship.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1254" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">Loan.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Loan.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="186" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_4cf2cf3dccc54c5998c30f3958f8f628_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Left([posted_time], 10)" field="posted_date" size="500" type="V_String" />
+            <FormulaField expression="Left([disbursed_time], 10)" field="disbursed_date" size="500" type="V_String" />
+            <FormulaField expression="Left([funded_time], 10)" field="funded_date" size="500" type="V_String" />
+            <FormulaField expression="[id]" field="loan_id" size="1073741823" type="V_WString" />
+            <FormulaField expression="IIF([currency] = 'ZWD', 'ZWL', [currency])" field="currency" size="500" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>posted_date = Left([posted_time], 10)
+disbursed_date = Left([disbursed_time], 10...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="438" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="id" selected="True" />
+            <Field field="funded_amount" selected="True" />
+            <Field field="loan_amount" selected="True" />
+            <Field field="activity" selected="True" />
+            <Field field="sector" selected="True" />
+            <Field field="use" selected="True" />
+            <Field field="country_code" selected="True" />
+            <Field field="country" selected="True" />
+            <Field field="region" selected="True" />
+            <Field field="currency" selected="True" />
+            <Field field="partner_id" selected="True" />
+            <Field field="posted_time" selected="True" />
+            <Field field="disbursed_time" selected="True" />
+            <Field field="funded_time" selected="True" />
+            <Field field="term_in_months" selected="True" />
+            <Field field="lender_count" selected="True" />
+            <Field field="tags" selected="True" />
+            <Field field="borrower_genders" selected="True" />
+            <Field field="repayment_interval" selected="True" />
+            <Field field="date" selected="True" />
+            <Field field="posted_date" selected="False" />
+            <Field field="disbursed_date" selected="False" />
+            <Field field="funded_date" selected="False" />
+            <Field field="loan_id" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" source="Formula: [_CurrentField_]" type="Int32" />
+            <Field name="funded_amount" source="Formula: [_CurrentField_]" type="Double" />
+            <Field name="loan_amount" source="Formula: [_CurrentField_]" type="Double" />
+            <Field name="activity" size="30" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="sector" size="14" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="use" size="500" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="country_code" size="2" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="country" size="36" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="region" size="57" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="currency" size="3" source="Formula: IIF([currency] = 'ZWD', 'ZWL', [currency])" type="String" />
+            <Field name="partner_id" source="Formula: [_CurrentField_]" type="Double" />
+            <Field name="posted_time" size="25" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="disbursed_time" size="25" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="funded_time" size="25" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="term_in_months" source="Formula: [_CurrentField_]" type="Double" />
+            <Field name="lender_count" source="Formula: [_CurrentField_]" type="Int16" />
+            <Field name="tags" size="500" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="borrower_genders" size="398" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="repayment_interval" size="9" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="date" source="Formula: [_CurrentField_]" type="Date" />
+            <Field name="posted_date" size="500" source="Formula: Left([posted_time], 10)" type="V_String" />
+            <Field name="disbursed_date" size="500" source="Formula: Left([disbursed_time], 10)" type="V_String" />
+            <Field name="funded_date" size="500" source="Formula: Left([funded_time], 10)" type="V_String" />
+            <Field name="loan_id" source="Formula: [id]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="870" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="loan_id" selected="True" />
+            <SelectField field="funded_amount" selected="True" />
+            <SelectField field="loan_amount" selected="True" />
+            <SelectField field="activity" selected="True" />
+            <SelectField field="sector" selected="True" />
+            <SelectField field="repayment_interval" selected="True" />
+            <SelectField field="tags" selected="True" />
+            <SelectField field="term_in_months" selected="True" />
+            <SelectField field="Loan Theme ID" selected="True" />
+            <SelectField field="region_id" selected="True" />
+            <SelectField field="partner_id" selected="True" />
+            <SelectField field="currency_id" selected="True" />
+            <SelectField field="use" selected="True" />
+            <SelectField field="posted_date" selected="True" />
+            <SelectField field="disbursed_date" selected="True" />
+            <SelectField field="funded_date" selected="True" />
+            <SelectField field="currency" selected="False" />
+            <SelectField field="value" selected="False" />
+            <SelectField field="Right_Right_currency" selected="False" />
+            <SelectField field="lender_count" selected="False" />
+            <SelectField field="id" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Currency_Rate.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Currency_Rate.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="currency" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Currency_Rate.csv" type="V_String" />
+            <Field name="currency_id" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Currency_Rate.csv" type="V_String" />
+            <Field name="value" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Currency_Rate.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="currency" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="currency" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_currency" selected="True" rename="Right_currency" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="786" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="borrower_genders" selected="True" />
+            <SelectField field="gender_id" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="906" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="borrower_genders" />
+            <Field field="gender_id" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: borrower_genders, gender_id</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1026" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Borrower_Gender.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Borrower_Gender.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="810" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="gender_id" selected="True" />
+            <SelectField field="loan_id" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="606" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="region" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="region" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_currency_id" selected="True" />
+                <SelectField field="Left_loan_id" selected="True" />
+                <SelectField field="Left_funded_amount" selected="True" />
+                <SelectField field="Left_loan_amount" selected="True" />
+                <SelectField field="Left_activity" selected="True" />
+                <SelectField field="Left_sector" selected="True" />
+                <SelectField field="Left_use" selected="True" />
+                <SelectField field="Left_partner_id" selected="True" />
+                <SelectField field="Left_term_in_months" selected="True" />
+                <SelectField field="Left_lender_count" selected="True" />
+                <SelectField field="Left_tags" selected="True" />
+                <SelectField field="Left_repayment_interval" selected="True" />
+                <SelectField field="Left_posted_date" selected="True" />
+                <SelectField field="Left_disbursed_date" selected="True" />
+                <SelectField field="Left_funded_date" selected="True" />
+                <SelectField field="Right_region_id" selected="True" />
+                <SelectField field="Right_Right_currency" selected="False" rename="Right_Right_currency" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>loan_theme_ids.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="V_String" />
+            <Field name="Loan Theme ID" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="V_String" />
+            <Field name="Loan Theme Type" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="V_String" />
+            <Field name="Partner ID" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="162" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="id" selected="True" />
+            <Field field="Loan Theme ID" selected="True" />
+            <Field field="Loan Theme Type" selected="True" />
+            <Field field="Partner ID" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="Int32" />
+            <Field name="Loan Theme ID" size="15" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="String" />
+            <Field name="Loan Theme Type" size="51" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="V_String" />
+            <Field name="Partner ID" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_theme_ids.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="region_id" selected="True" />
+            <Field field="region" selected="True" />
+            <Field field="lat" selected="True" />
+            <Field field="lon" selected="True" />
+            <Field field="mpi" selected="True" />
+            <Field field="country_code" selected="True" />
+            <Field field="country" selected="True" />
+            <Field field="headcount.ratio.regional" selected="True" />
+            <Field field="intensity.of.deprivation.regional" selected="True" />
+            <Field field="rural_pct" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="region_id" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="Int16" />
+            <Field name="region" size="52" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="lat" size="11" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="String" />
+            <Field name="lon" size="12" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="String" />
+            <Field name="mpi" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="Double" />
+            <Field name="country_code" size="3" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="String" />
+            <Field name="country" size="33" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="headcount.ratio.regional" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="Double" />
+            <Field name="intensity.of.deprivation.regional" size="4" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="String" />
+            <Field name="rural_pct" size="3" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_44cc3e13c2164be98587edab3b14a5a3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="534" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="id" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: id</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="198" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Partner ID" selected="True" />
+            <Field field="Field Partner Name" selected="True" />
+            <Field field="sector" selected="True" />
+            <Field field="Loan Theme ID" selected="True" />
+            <Field field="Loan Theme Type" selected="True" />
+            <Field field="country" selected="True" />
+            <Field field="forkiva" selected="True" />
+            <Field field="region" selected="True" />
+            <Field field="geocode_old" selected="True" />
+            <Field field="ISO" selected="True" />
+            <Field field="number" selected="True" />
+            <Field field="amount" selected="True" />
+            <Field field="LocationName" selected="True" />
+            <Field field="geocode" selected="True" />
+            <Field field="names" selected="True" />
+            <Field field="geo" selected="True" />
+            <Field field="lat" selected="True" />
+            <Field field="lon" selected="True" />
+            <Field field="mpi_region" selected="True" />
+            <Field field="mpi_geo" selected="True" />
+            <Field field="rural_pct" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Partner ID" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="Int16" />
+            <Field name="Field Partner Name" size="81" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="sector" size="27" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="String" />
+            <Field name="Loan Theme ID" size="15" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="String" />
+            <Field name="Loan Theme Type" size="51" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="country" size="36" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="forkiva" size="3" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="String" />
+            <Field name="region" size="71" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="geocode_old" size="31" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="ISO" size="3" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="String" />
+            <Field name="number" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="Int16" />
+            <Field name="amount" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="Int32" />
+            <Field name="LocationName" size="80" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="geocode" size="44" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="names" size="218" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="geo" size="42" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="lat" size="21" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="lon" size="20" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="mpi_region" size="49" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="mpi_geo" size="33" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="V_String" />
+            <Field name="rural_pct" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\loan_themes_by_region.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="246" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">Loan_Theme_Clean.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Loan_Theme_Clean.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="54" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Loan Theme ID" selected="True" />
+            <SelectField field="Loan Theme Type" selected="True" />
+            <SelectField field="id" selected="False" />
+            <SelectField field="Partner ID" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Kiva_Country_Table.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="country_code" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="country" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="iso" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="population" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="population_below_poverty_line" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="human.dev.index" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="life_expectancy" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="mean_years_of_schooling" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="gross.national.income" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="expected_years_of_schooling" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+            <Field name="MPI.National" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Country_Table.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="438" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ISO" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="iso" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Partner ID" selected="True" />
+                <SelectField field="Left_Field Partner Name" selected="True" />
+                <SelectField field="Right_country_code" selected="True" />
+                <SelectField field="Right_country" selected="False" rename="Right_country" />
+                <SelectField field="Right_iso" selected="False" rename="Right_iso" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="534" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Partner ID" selected="True" rename="partner_id" />
+            <SelectField field="Field Partner Name" selected="True" rename="partner_name" />
+            <SelectField field="country_code" selected="True" rename="country_id" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Loan Theme ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Loan Theme ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_id" selected="True" />
+                <SelectField field="Left_Loan Theme ID" selected="True" />
+                <SelectField field="Right_Partner ID" selected="False" rename="Right_Partner ID" />
+                <SelectField field="Right_Loan Theme ID" selected="False" rename="Right_Loan Theme ID" />
+                <SelectField field="Right_Loan Theme Type" selected="False" rename="Right_Loan Theme Type" />
+                <SelectField field="Right_region" selected="True" />
+                <SelectField field="Right_ISO" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="438" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="930" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>Gender_Loan_ID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="966" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([use], '&quot;', '')" field="use" size="500" type="V_String" />
+            <FormulaField expression="REGEX_Replace([use], ',', '')" field="use" size="500" type="V_String" />
+            <FormulaField expression="REGEX_Replace([tags], ',', '')" field="tags" size="500" type="V_String" />
+            <FormulaField expression="IIF(IsNull([region_id]), 0, [region_id])" field="region_id" size="2" type="Int16" />
+            <FormulaField expression="IIF(IsNull([partner_id]), 0, [partner_id])" field="partner_id" size="8" type="Double" />
+            <FormulaField expression="IIF(IsNull([funded_date]), 'NULL', [funded_date])&#xA;" field="funded_date" size="500" type="V_String" />
+            <FormulaField expression="IIF(IsNull([posted_date]), 'NULL', [posted_date])" field="posted_date" size="500" type="V_String" />
+            <FormulaField expression="IIF(IsNull([disbursed_date]), 'NULL', [disbursed_date])" field="disbursed_date" size="500" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>use = REGEX_Replace([use], '"', '')
+use = REGEX_Replace([use], ',', '')
+tags = R...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="414" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Kiva_Region_Table.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="region_id" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="region" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="lat" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="lon" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="mpi" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="country_code" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="country" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="headcount.ratio.regional" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="intensity.of.deprivation.regional" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+            <Field name="rural_pct" size="254" source="File: C:\Users\gianf\Documents\MS Analytics\Data Engineering Platforms\Final Project\Kiva_Region_Table.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="870" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="loan_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_currency_id" selected="True" />
+                <SelectField field="Left_loan_id" selected="True" />
+                <SelectField field="Left_funded_amount" selected="True" />
+                <SelectField field="Left_loan_amount" selected="True" />
+                <SelectField field="Left_activity" selected="True" />
+                <SelectField field="Left_sector" selected="True" />
+                <SelectField field="Left_use" selected="True" />
+                <SelectField field="Left_partner_id" selected="True" />
+                <SelectField field="Left_term_in_months" selected="True" />
+                <SelectField field="Left_lender_count" selected="True" />
+                <SelectField field="Left_tags" selected="True" />
+                <SelectField field="Left_repayment_interval" selected="True" />
+                <SelectField field="Left_posted_date" selected="True" />
+                <SelectField field="Left_disbursed_date" selected="True" />
+                <SelectField field="Left_funded_date" selected="True" />
+                <SelectField field="Left_region_id" selected="True" />
+                <SelectField field="Right_id" selected="True" type="V_WString" size="11" />
+                <SelectField field="Right_Loan Theme ID" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_477229c67c384af28afe7b2d60c11c21_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_69a25241331a4312b2ea62f9adf4970e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_76cde930de9a4a0ab3c51391d820465e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1158" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="loan_id" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: loan_id</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="138" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Loan Theme ID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: Loan Theme ID</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gianf\AppData\Local\Temp\Engine_17336_2e8de0ce40a34f0383dc1cf711aba9dd_\Engine_2760_4aa4761aba6243d889f83f82e8256ad8_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="750" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([partner_name], ',', '')" field="partner_name" size="81" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[partner_name = REGEX_Replace([partner_name], ',', '')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output26" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output26" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output26" />
+      <Destination ToolID="62" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output26" />
+      <Destination ToolID="65" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="65" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output26" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="42" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Unique" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Unique" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Join" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Unique" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="71" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Unique" />
+      <Destination ToolID="71" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Unique" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="9" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Join" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="65" Connection="Left" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="65" Connection="Join" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Join" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Join" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Unique" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Unique" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Unique" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Project Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

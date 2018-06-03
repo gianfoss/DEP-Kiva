@@ -1,0 +1,216 @@
+---
+title: "Kiva Loan Usage Description Analysis"
+author: 'Team SAMI'
+date: "May 25, 2018"
+output: 
+  html_document: 
+    fig_height: 7
+    fig_width: 9
+---
+
+***
+
+#Text mining Kiva loan usage descriptions
+
+***
+
+The Kiva set has loans that are broadly defined by sector. However, these do not offer a lot of insight into what each loan is actually looking for outside of a generic label (such as retail). To enhance the company's awareness of what specific uses people are taking loans for, this text mining activity seeks to shed light on the top words loan applications mention. This will be conducted by gender and by sector. This chunk allows direct access to the cloud platform our team created. I've elected to use the original csv for the analysis though, only because some of the loan usage data was stripped following cleaning.
+
+```{r packages and data load, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(tidytext)
+library(RMySQL)
+library(DBI)
+
+#getSqlConnection <- function(){
+  #con <-
+    #dbConnect(
+      #MySQL(),
+      #username = 'root',
+      #password = 'root',
+      #host = '104.196.214.52')
+  #return(con)
+#}
+
+#connection <- getSqlConnection()
+
+#res <- dbListTables(connection)
+
+kiva_loans <- read.csv("kiva_loans.csv", stringsAsFactors = F, na.strings = "")
+```
+
+To start, the text set is derived from the main kiva loans data. The focus here in on the use column as well as sector and borrower gender. However, some transformations need to take place first. Since borrower gender includes strings with a mix of men or women, a new field was created to mark loans that are for men, women, or a mixed group. These will be used to group text and see if there are any differences in loans taken on by men and women.
+
+```{r creating set with text and necessary features,message=FALSE, warning=FALSE}
+text_set <- kiva_loans %>%
+  select(activity, sector, use, borrower_genders) %>%
+  mutate(borrower_genders = gsub("female", "women", borrower_genders, fixed = T))
+
+women <- grepl("women", text_set$borrower_genders)
+
+men <- grepl("male", text_set$borrower_genders)
+
+mixed_gender <- grepl("male.*women|women*male", text_set$borrower_genders)
+
+text_set <- text_set %>%
+  mutate(transformed_gender = case_when(
+    mixed_gender ~ "mixed",
+    men ~ "men",
+    women ~ "women")) %>%
+  select(-borrower_genders)
+```
+
+With the proper set created, the actual text mining can take place. The essential goal for this portion is to separate each individual word from the use column and count them. Additionally, these counts are grouped by sector. This means that Kiva could use these to get an in-depth analysis of what words make up each sector category. These could serve as effective insights for creating more representative categories, marketing for specific loan drives (e.g. for water access or drinking water tools), and generally better understanding their loans. As a note, column stop words (such as the, to, but, and so on) and buy, sell, and purchase have been removed because they are included in almost every loan and as such, offer relatively little value. 
+
+```{r text mining- creating df for words by sector,message=FALSE, warning=FALSE}
+loan_words <- text_set %>%
+  unnest_tokens(word, use) %>%
+  count(sector, word, sort = TRUE) %>%
+  anti_join(stop_words) %>%
+  ungroup()
+
+loan_words <- loan_words %>%
+  filter(word != "purchase" & word != "buy" & word != "sell" & word != "pay")
+```
+
+***
+
+##Words by Sector
+
+***
+
+The first plot highlights the top 40 words sorted by frequency. As seen, water is the top word (and coloured blue for Personal Use). The most frequent sectors here are retail and agriculture. What's interesting is the words help weave a narrative for certain categories. For example, the personal use words all relate to water and tell a story around families needing access to safe and filtered drinking water. Moreover, since they are classified in the broad category personal use, this insight might otherwise be overlooked. These text based insights could help Kiva refine their operations as previously mentioned. Here, a marketing campaign targeting lenders for water access might be prudent given how frequently the word comes up.
+
+```{r visualzing loan usage words 1}
+theme_set(
+  theme_bw()
+)
+
+loan_words %>%
+  arrange(desc(n)) %>%
+  slice(1:30) %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n, fill = sector)) +
+  geom_col() +
+  coord_flip() +
+  labs(title = "Top 30 words from Kiva loan use descriptions",
+       subtitle = "Water for personal use is top word; Retail & Agriculture are most represented sectors in top words",
+       x = NULL,
+       y = "word count",
+       caption = "Source: Kiva Loans Data")
+```
+
+Moving into all categories, the top 15 words from each sector are included. Most of the words fit nicely under the sector while adding nuance to each category. Again, these could be used to refine loan marketing to add more details for lenders to understand. 
+
+```{r visualzing loan usage words 2, fig.height=12,fig.width=13, warning=FALSE}
+loan_plot <- loan_words %>%
+  group_by(sector) %>%
+  top_n(15, n) %>% 
+  ungroup() %>%
+  arrange(sector, n) %>%
+  mutate(order = row_number())
+
+loan_plot %>%
+  ggplot(aes(order, n, fill = sector)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(facets = "sector", scales = "free") +
+  scale_x_continuous(breaks = loan_plot$order, 
+                     labels = loan_plot$word, expand = c(0, 0)) +
+  coord_flip() +
+  theme(plot.title = element_text(size = 15),
+        axis.text.y =  element_text(size = 13)) +
+  labs(title = "Top 15 words from Kiva loan use descriptions by sector",
+       x = NULL,
+       y = "word count",
+       caption = "Source: Kiva Loans Data")
+```
+
+
+***
+
+###Words by Gender
+
+***
+
+Kiva prides itself on helping disadvantaged peoples worldwide and has an added emphasis on women in particular. This text mining work will again help provide greater detail on the loan's being taken out by women and what they're used for. To do so, the words for gender are derived.
+
+```{r text mining- creating df words by gender, message=FALSE, warning=FALSE}
+gender_loans <- text_set %>%
+  unnest_tokens(word, use) %>%
+  count(transformed_gender, word, sort = TRUE) %>%
+  anti_join(stop_words)%>%
+  ungroup()
+
+gender_loans <- gender_loans %>%
+  filter(word != "purchase" & word != "buy" & word != "sell" & word != "pay")
+```
+
+The top words for women loan usage seem to focus mostly on food, businesses, and agriculture. Women have the most words as well, which is a proxy for the group having the most loans. Across all gender categories, the largest loan use words seem to skew towards agriculture. Interestingly, the mixed group has solar as a top 20 word, which might point to the emergence of self-sufficient energy projects.
+
+```{r visualzing loan usage words by gender, fig.height=12,fig.width=13, warning=FALSE}
+gender_plot <- gender_loans %>%
+  group_by(transformed_gender) %>%
+  top_n(20, n) %>% 
+  ungroup() %>%
+  arrange(transformed_gender, n) %>%
+  mutate(order = row_number(),
+         transformed_gender = factor(transformed_gender, 
+                                     levels = c("women", "men", "mixed")))
+
+gender_plot %>%
+  ggplot(aes(order, n, fill = transformed_gender)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(facets = "transformed_gender", scales = "free") +
+  coord_flip() +
+  scale_x_continuous(breaks = gender_plot$order, 
+                     labels = gender_plot$word, expand = c(0, 0)) +
+  theme(plot.title = element_text(size = 15),
+        axis.text.y =  element_text(size = 13)) +
+  labs(title = "Top 20 words from Kiva loan use descriptions by gender",
+       x = NULL,
+       y = "word count",
+       caption = "Source: Kiva Loans Data")
+```
+
+Building on the previous insights, another set of word groupings was developed that accounted for both gender and sector. Specifically, the focus will be on common loan words for women by sector. This stems from what looked like a major focus on agriculture in the previous plot, something that was worth exploring in more detail.
+
+```{r creating df for gender and sector,message=FALSE}
+gender_sector <- text_set %>%
+  unnest_tokens(word, use) %>%
+  count(sector, transformed_gender, word, sort = TRUE) %>%
+  anti_join(stop_words) %>%
+  ungroup()
+
+gender_sector <- gender_sector %>%
+  filter(word != "purchase" & word != "buy" & word != "sell" & word != "pay") %>%
+  filter(transformed_gender == "women")
+```
+
+The initial hunch appears reasonable with a large number of agriculture and retail words. This plot would provide Kiva with ample opportunity to tailor their product offerings or building compelling marketing case studies.
+
+```{r women by sector plot, fig.height=12,fig.width=13}
+women_plot <- gender_sector %>%
+  group_by(sector) %>%
+  top_n(10, n) %>% 
+  ungroup() %>%
+  arrange(sector, n) %>%
+  mutate(order = row_number())
+
+women_plot %>%
+  ggplot(aes(order, n, fill = sector)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(facets = "sector", scales = "free") +
+  scale_x_continuous(breaks = women_plot$order, 
+                     labels = women_plot$word, expand = c(0, 0)) +
+  coord_flip() +
+  theme(plot.title = element_text(size = 15),
+        axis.text.y =  element_text(size = 13)) +
+  labs(title = "Top 10 words from Kiva loan use descriptions by sector for women",
+       x = NULL,
+       y = "word count by sector category",
+       caption = "Source: Kiva Loans Data")
+```
+
+
+***
